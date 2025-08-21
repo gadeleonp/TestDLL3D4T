@@ -7,7 +7,7 @@ Documentation for the C++ Plugin
  5. Ensure the project settings are configured to output a DLL.
  
  - How to compile the plugin in C#:
- 1. I usted used the Compile->Compile Solution option in Visual Studio.
+ 1. I  used the Compile->Compile Solution option in Visual Studio.
  2. Copy the compiled DLL file to the appropriate plugins directory of your application.
  3. Ensure that the application is configured to load plugins from that directory, I copied it to the plugins directory of the application.The DLL file has to be in the same
  directory as the executable file of the application en C#. 
@@ -17,20 +17,12 @@ Documentation for the C++ Plugin
  The plugin uses a simple data structure to store the 3D points and their associated data. The data is stored in a vector of structs, where each struct contains the necessary 
  information for a point. 
  Memory is managed using standard C++ containers, which handle allocation and deallocation automatically.
- For the C# console project, I didn't use any specific data structures like a HashTable, Dictionary, BTree, AVL Tree. I think an easy data structure that wall used was a LinkedList.
+ For the C# console project, I didn't use any specific data structures except for the Vector. I think an easy data structure that wall used was a LinkedList. 
  
 For the memory management I used the malloc function to allocate memor for the array of vertex structures in this case I send the intenger number 8 as a paramter so the malloc functions
 uses this number to allocate the memory for 8 vertex structures.
 
-My Restrictions:
-Currently I have a PC with this specifications:
 
-CPU	Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz   3.40 GHz
-Installed RAM 	16.0 GB
-Storage HDD: 932 GB SSD WD Green 2.5 1000GB
-Graphics Card: NVIDIA GeForce GT 710 (2 GB), Intel(R) HD Graphics 4000 (32 MB)
-Operative System type: de 64 bits, procesador x64
-Windows 10 Home Edition. 
 
 Enhacements:
 I think that the management of memory can by the compilers since they have a better garbage collector that can help to manage the memory in a better way.
